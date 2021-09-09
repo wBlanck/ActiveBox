@@ -21,8 +21,18 @@
 html {
   scroll-behavior: smooth;
 }
-
 body {
   font-family: var(--ff-primary);
 }
+img {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+  font-family: var(--ff-primary);
+}
 
+.container {
+  max-width: 1175px;
+  margin: 0 auto;
+}
