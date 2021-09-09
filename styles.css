@@ -88,6 +88,25 @@ header{
   border-radius: 3px;
   cursor: pointer;
 }
+.socials {
+  display: flex;
+  justify-content: space-evenly;
+}
+.socials__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  width: 45px;
+  border: 1px solid var(--clr-gray-light);
+  cursor: pointer;
+}
+.socials__container:hover {
+  border: 1px solid var(--clr-gray);
+}
+.socials i {
+  color: var(--clr-gray-light);
+}
 
 /* header */
 .header {
@@ -168,4 +187,51 @@ header{
 .feature__desc {
   color: var(--clr-gray);
   line-height: 1.4;
+}
+/* gallery */
+.gallery {
+  padding: 0;
+}
+
+/* team section */
+.team {
+
+}
+.team__content {
+  padding: 120px 40px;
+}
+.member {
+  text-align: center;
+}
+.member + .member {
+  margin-top: 65px;
+}
+.member__name {
+  font-weight: 500;
+  color: var(--clr-black);
+  margin: 10px 0;
+}
+.member__role {
+  color: var(--clr-red);
+  font-size: .9375rem;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  display: block;
+}
+.member__desc {
+  color: var(--clr-gray);
+  margin-bottom: 45px;
+}
+/* quotes */
+.quotes__img {
+
+}
+.slider {
+  background-color: var(--clr-purple-pink);
+}
+.slider__quote {
+
+}
+.slider__author {
+
 }
