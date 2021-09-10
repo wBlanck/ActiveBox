@@ -38,7 +38,7 @@ ul {
 }
 section,
 header{
-  padding: 20px;
+  padding: 10px;
 }
 .container {
   max-width: 1175px;
@@ -46,8 +46,8 @@ header{
 }
 .hamburger {
   background-color: var(--clr-red);
-  height: 55px;
-  width: 55px;
+  height: 40px;
+  width: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,27 +55,27 @@ header{
   cursor: pointer;
 }
 .hamburger span {
-  width: 23px;
-  height: 3px;
+  width: 18px;
+  height: 2px;
   background-color: var(--clr-white);
   display: block;
   position: relative;
 }
 .hamburger span::before {
   content: '';
-  width: 23px;
-  height: 3px;
+  width: 18px;
+  height: 2px;
   background-color: var(--clr-white);
   position: absolute;
-  top: -8px;
+  top: -6px;
 }
 .hamburger span::after {
   content: '';
-  width: 23px;
-  height: 3px;
+  width: 18px;
+  height: 2px;
   background-color: var(--clr-white);
   position: absolute;
-  top: 8px;
+  top: 6px;
 }
 .btn {
   font-size: 15px;
@@ -121,14 +121,19 @@ header{
   margin-bottom: 60px;
 }
 .logo {
-  max-width: 230px;
+  max-width: 200px;
 }
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0 35px 0;
+  padding: 20px;
   border-bottom: 1px solid var(--clr-gray);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color:var(--clr-purple-dark);
 }
 .nav__list {
   display: none;
@@ -139,13 +144,14 @@ header{
   padding-bottom: 230px;
 }
 .home__content {
-
+  padding-top: 110px;
 }
 .home__title {
   font-size: 2.5rem;
   text-transform: uppercase;
   margin-bottom: 20px;
   font-family: var(--ff-secondary);
+  line-height: 1.1;
 }
 .home__desc {
   font-size: 1.25rem;
