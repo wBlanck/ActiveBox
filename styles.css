@@ -45,6 +45,8 @@ header{
   margin: 0 auto;
 }
 .hamburger {
+  position: relative;
+  top: 0;
   background-color: var(--clr-red);
   height: 40px;
   width: 40px;
@@ -53,6 +55,7 @@ header{
   align-items: center;
   border-radius: 50%;
   cursor: pointer;
+  z-index: 20;
 }
 .hamburger span {
   width: 18px;
@@ -137,6 +140,35 @@ header{
 }
 .nav__list {
   display: none;
+}
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 11;
+  display: none;
+}
+.mobile-nav__list {
+
+}
+.mobile-nav__item:hover .mobile-nav__link{
+  color: rgba(255, 255, 255, 0.95);
+}
+.mobile-nav__link {
+  font-size: 1.5625rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.75);
+  text-transform: uppercase;
+}
+.mobile-nav__item + .mobile-nav__item {
+  margin-top: 30px;
 }
 .home {
   text-align: center;
