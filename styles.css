@@ -295,3 +295,53 @@ header{
 .download button {
 
 }
+/* about */
+.about {
+  background-color: var(--clr-purple-lighter);
+  text-align: center;
+  color: var(--clr-white);
+  padding: 70px 25px;
+}
+.about__content {
+
+}
+.about__list{
+  margin-bottom: 50px;
+}
+.about__title {
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+.about__item {
+
+}
+.about__link {
+  color: var(--clr-gray);
+}
+.about__socials {
+  margin-bottom: 50px;
+  
+}
+.about__socials .socials {
+  margin: 0 auto;
+  width: 70%;
+}
+.socials {
+
+}
+.about__desc p{
+  color: var(--clr-gray);
+  font-weight: 500;
+}
+/* footer */
+.footer {
+  background-color: var(--clr-purple-dark);
+  text-align: center;
+  padding: 20px 70px;
+}
+.footer p {
+  color: var(--clr-gray);
+}
+.footer span {
+  color: var(--clr-white);
+}
