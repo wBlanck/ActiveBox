@@ -341,6 +341,7 @@ header{
 }
 .footer p {
   color: var(--clr-gray);
+  font-weight: 500;
 }
 .footer span {
   color: var(--clr-white);
