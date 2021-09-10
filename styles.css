@@ -261,7 +261,7 @@ header{
 .slider__dot {
   height: 15px;
   width: 15px;
-  background-color: var(--clr-white);
+  background-color: var(--clr-gray);
   border-radius: 50%;
   cursor: pointer;
 }
@@ -269,6 +269,29 @@ header{
   margin-left: 12px;
 }
 .slider__dot--active {
+  background-color: var(--clr-white);
+}
+/* download section */
+.download {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: var(--clr-black);
+  padding: 110px 58px;
+}
+.download__title {
+  font-size: 2.0625rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.download__subtitle {
+  font-size: 1.0625rem;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.download button {
 
-  background-color: var(--clr-gray);
 }
