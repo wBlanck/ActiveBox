@@ -12,7 +12,31 @@
   --clr-red: #e84545;
   --clr-purple-lighter: #3a3e64;
   --clr-purple-dark: #313454;
+
+  --fs-xl: 2rem;
+  --fs-600: 1.125rem;
+  --fs-400: 0.875rem;
+  --fs-300: 0.8125rem;
 }
+
+@media screen and (min-width: 480px) {
+  :root {
+    --fs-xl: 2.625rem;
+    --fs-600: 1.125rem;
+    --fs-400: 0.875rem;
+    --fs-300: 0.8125rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  :root {
+    --fs-xl: 4.0625rem;
+    --fs-600: 1.375rem;
+    --fs-400: 0.875rem;
+    --fs-300: 0.8125rem;
+  }
+}
+
+
 *,*::before,*::after {
   margin: 0;
   padding: 0;
@@ -82,7 +106,7 @@ header{
   top: 6px;
 }
 .btn {
-  font-size: 15px;
+  font-size: var(--fs-300);
   font-family: var(--ff-primary);
   text-transform: uppercase;
   font-weight: 600;
@@ -193,14 +217,14 @@ header{
   padding-top: 110px;
 }
 .home__title {
-  font-size: 2.5rem;
+  font-size: var(--fs-xl);
   text-transform: uppercase;
   margin-bottom: 20px;
   font-family: var(--ff-secondary);
   line-height: 1.1;
 }
 .home__desc {
-  font-size: 1.25rem;
+  font-size: var(--fs-600);
   color: rgba(255,255,255, .8);
   margin-bottom: 100px;
 }
@@ -225,20 +249,23 @@ header{
   margin-top: 60px;
 }
 .feature__img-container {
+  display: flex;
+  justify-content: center;
+  flex: 0;
   width: 75px;
   height: 75px;
   margin-bottom: 30px;
 }
 .feature__img {
-  
 }
 .feature__title {
+  font-size: var(--fs-400);
   text-transform: uppercase;
   color: var(--clr-black);
-  font-size: 1rem;
   margin-bottom: 15px;
 }
 .feature__desc {
+  font-size: var(--fs-400);
   color: var(--clr-gray);
   line-height: 1.4;
 }
@@ -293,18 +320,20 @@ header{
   align-self: center;
 }
 .member__name {
+  font-size: var(--fs-600);
   font-weight: 500;
   color: var(--clr-black);
   margin: 10px 0;
 }
 .member__role {
   color: var(--clr-red);
-  font-size: .9375rem;
+  font-size: var(--fs-300);
   text-transform: uppercase;
   margin-bottom: 30px;
   display: block;
 }
 .member__desc {
+  font-size: var(--fs-400);
   color: var(--clr-gray);
   margin-bottom: 45px;
 }
@@ -335,6 +364,7 @@ header{
   margin-bottom: 35px;
 }
 .slider__author {
+  font-size: var(--fs-300);
   font-family: var(--ff-secondary);
   font-weight: 700;
 }
@@ -371,7 +401,7 @@ header{
   margin-bottom: 10px;
 }
 .download__subtitle {
-  font-size: 1.0625rem;
+  font-size: var(--fs-400);
   margin-bottom: 50px;
   text-transform: uppercase;
   font-weight: 600;
@@ -385,6 +415,7 @@ header{
   text-align: center;
   color: var(--clr-white);
   padding: 70px 25px;
+  font-size: var(--fs-400);
 }
 .about__content {
 
