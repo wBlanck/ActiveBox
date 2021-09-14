@@ -161,6 +161,11 @@ section {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .header__content {
   position: fixed;
@@ -179,7 +184,6 @@ section {
   border-bottom: 1px solid var(--clr-gray);
   transition: all .2s ease-in-out;
 }
-
 .nav__list {
   display: none;
 }
@@ -231,10 +235,10 @@ section {
 .home {
   text-align: center;
   color: var(--clr-white);
-  padding-bottom: 230px;
+ /*  padding-bottom: 230px; */
 }
 .home__content {
-  padding-top: 170px;
+  padding-top: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
