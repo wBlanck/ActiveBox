@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Open+Sans:wght@700&family=Raleway:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Open+Sans:wght@700&family=Raleway:wght@300;400;500;600;700&display=swap');
 
 :root {
   --ff-primary: 'Raleway', sans-serif;
@@ -14,6 +14,7 @@
   --clr-purple-dark: #313454;
 
   --fs-xl: 2rem;
+  --fs-700: 1.375rem;
   --fs-600: 1.125rem;
   --fs-400: 0.875rem;
   --fs-300: 0.8125rem;
@@ -56,6 +57,9 @@ img {
 a {
   text-decoration: none;
   font-family: var(--ff-primary);
+}
+p {
+  line-height: 1.6;
 }
 ul {
   list-style: none;
@@ -113,7 +117,7 @@ header{
   color: var(--clr-white);
   background-color: var(--clr-red);
   border: none;
-  padding: 24px 50px;
+  padding: 15px 40px;
   border-radius: 3px;
   cursor: pointer;
 }
@@ -233,7 +237,7 @@ header{
 }
 /* features section */
 .features {
-  padding: 120px 40px;
+  padding: 120px 30px;
 }
 .features__content {
   text-align: center;
@@ -318,10 +322,11 @@ header{
 }
 .member__img {
   align-self: center;
+  margin-bottom: 10px;
 }
 .member__name {
-  font-size: var(--fs-600);
-  font-weight: 500;
+  font-size: var(--fs-700);
+  font-weight: 400;
   color: var(--clr-black);
   margin: 10px 0;
 }
@@ -360,13 +365,14 @@ header{
 }
 .slider__quote {
   font-family: var(--ff-cardo);
-  font-size: 1.875rem;
+  font-size: 1.625rem;
   margin-bottom: 35px;
 }
 .slider__author {
   font-size: var(--fs-300);
   font-family: var(--ff-secondary);
-  font-weight: 700;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 .slider__dots{
   display: flex;
@@ -393,11 +399,12 @@ header{
   flex-direction: column;
   text-align: center;
   color: var(--clr-black);
-  padding: 110px 58px;
+  padding: 110px 30px;
 }
 .download__title {
-  font-size: 2.0625rem;
-  font-weight: 400;
+  font-size: 1.75rem;
+  font-weight: 300;
+  line-height: 1.1;
   margin-bottom: 10px;
 }
 .download__subtitle {
@@ -453,6 +460,7 @@ header{
   background-color: var(--clr-purple-dark);
   text-align: center;
   padding: 20px 70px;
+  font-size: var(--fs-400);
 }
 .footer p {
   color: var(--clr-gray);
