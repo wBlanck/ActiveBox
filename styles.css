@@ -215,7 +215,9 @@ section {
   align-items: center;
   text-align: center;
   z-index: 11;
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: all .2s ease-in-out;
 }
 .mobile-nav__list {
 
@@ -561,6 +563,7 @@ section {
   }
   .member {
     max-width: 212px;
+    text-align: start;
   }
   .member + .member {
     margin-top: 0;
